@@ -1,0 +1,22 @@
+:root{ --text:#0f172a; --muted:#64748b; --border:rgba(15,23,42,0.06); --card:rgba(255,255,255,0.85); } .dark{ --text:#e6eef8; --muted:#9aa6b3; --border:rgba(255,255,255,0.04); --card:rgba(6,10,18,0.6); }
+*{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:var(--text); background-image: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(250,250,252,0.92)), url('bg-pattern.svg'); background-size:cover; background-attachment:fixed; }
+.container{max-width:900px;margin:0 auto;padding:0 1rem;}
+.nav{border-bottom:1px solid var(--border);} .nav-inner{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;}
+.nav a{margin-right:1rem;text-decoration:none;color:var(--text);font-weight:500;}
+.hero{display:flex;flex-wrap:wrap;gap:2rem;align-items:center;padding:3rem 0;}
+.hero-text h1{font-size:2.5rem;margin:0;font-weight:800;}
+.phonetic{color:var(--muted);margin-top:0.5rem;}
+.subtitle{margin-top:0.5rem;color:var(--muted);}
+.cta{margin-top:1rem;}
+.btn-dark{background:#000;color:#fff;padding:0.6rem 1rem;border-radius:6px;text-decoration:none;}
+.btn-light{padding:0.6rem 1rem;border-radius:6px;border:1px solid var(--border);text-decoration:none;color:var(--text);}
+.hero-image img{width:160px;height:160px;border-radius:50%;object-fit:cover;box-shadow:0 6px 18px rgba(2,6,23,0.08);}
+hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:1rem;}
+.book img{width:90px;height:130px;object-fit:cover;border-radius:4px;}
+.posts .post{display:block;padding:1rem;border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text);margin-bottom:0.8rem;}
+.skills span{display:inline-block;padding:0.3rem 0.8rem;border-radius:999px;border:1px solid var(--border);margin-right:0.5rem;margin-top:0.5rem;}
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;}
+.card{border:1px solid var(--border);padding:1rem;border-radius:10px;background:var(--card);}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:2rem 0;color:var(--muted);}
+@media (max-width:720px){ .hero{flex-direction:column;} .hero-text h1{font-size:2rem;} .nav-inner{flex-direction:column;gap:0.5rem;} .footer-inner{flex-direction:column;gap:0.8rem;} }
